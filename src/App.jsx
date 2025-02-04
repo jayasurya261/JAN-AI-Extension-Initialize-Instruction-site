@@ -2,6 +2,8 @@ import React from "react";
 import { Timeline } from "./components/ui/timeline";
 import { useState } from "react";
 import { MdContentCopy } from "react-icons/md";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { BackgroundBeamsWithCollision } from "./components/ui/background-beams-with-collision";
 
 const App = () => {
   const [copied, setCopied] = useState(false);
@@ -107,6 +109,10 @@ const App = () => {
               5. Verify installation: Open a terminal and run the command olammba --version to verify that  <span className="ml-5">Olammba has been installed successfully.</span>
               </p>
               <br/>
+              <div>
+                
+              </div>
+              <a href="https://ollama.com/" target="_blank" className="text-blue-400 text-4xl"><div className="flex underline"><p className="mr-5 ">Download Link </p><FaExternalLinkAlt /></div></a>
               </div>
            </div>
           </p>
@@ -248,28 +254,35 @@ const App = () => {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="https://assets.aceternity.com/pro/hero-sections.png"
+              src="https://res.cloudinary.com/dfrojkr3z/image/upload/v1738695790/vlrqsanem0phqvbb5xzi.png"
               alt="hero template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <img
-              src="https://assets.aceternity.com/features-section.png"
+              src="https://res.cloudinary.com/dfrojkr3z/image/upload/v1738695790/ld1ervxfxw6xjjghsv9i.png"
               alt="feature template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <img
-              src="https://assets.aceternity.com/pro/bento-grids.png"
+              src="https://res.cloudinary.com/dfrojkr3z/image/upload/v1738695791/c3rcsh5gnvhmpfgc6i7e.png"
               alt="bento template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <img
-              src="https://assets.aceternity.com/cards.png"
+              src="https://res.cloudinary.com/dfrojkr3z/image/upload/v1738695790/yl18doqfa18jzeku6ahc.png"
+              alt="cards template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <img
+              src="https://res.cloudinary.com/dfrojkr3z/image/upload/v1738695791/lpu7zzfzrqiph45lpoc2.png"
               alt="cards template"
               width={500}
               height={500}
@@ -282,6 +295,21 @@ const App = () => {
   ];
   return (
    <div>
+    <BackgroundBeamsWithCollision>
+      <h2 className="text-2xl relative z-20 md:text-4xl lg:text-7xl font-bold text-center text-black dark:text-white font-sans tracking-tight">
+        Think Performance & Security!{" "}
+       <div className="text-8xl">
+       <div className="relative mx-auto inline-block w-max [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]">
+          <div className="absolute left-0 top-[1px] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-r py-4 from-purple-500 via-violet-500 to-pink-500 [text-shadow:0_0_rgba(0,0,0,0.1)]">
+            <span className="">Think JAN AI</span>
+          </div>
+          <div className="relative bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 py-4">
+            <span className="">Think JAN AI</span>
+          </div>
+        </div>
+       </div>
+      </h2>
+    </BackgroundBeamsWithCollision>
     <Timeline data={data} />
    </div>
   );

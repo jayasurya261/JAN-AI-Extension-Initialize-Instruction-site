@@ -37,22 +37,22 @@ const App = () => {
            <div>
             <p className="font-bold text-5xl">For Windows</p><br/>
             <div>
-              <p className="text-xl">
+              <p className="lg:text-xl sm:text-md">
             1. Download: Go to the official Olammba website and click on the "Download" button for <span className="ml-5">Windows.</span>
               
               </p>
               <br/>
-              <p className="text-xl">
+              <p className="lg:text-xl sm:text-md">
               2. Save the installer: Save the downloaded file (Olammba_Setup.exe) to your computer.
               
               </p>
               <br/>
-              <p className="text-xl">
+              <p className="lg:text-xl sm:text-md">
               3. Run the installer: Double-click on the downloaded file to run the installer.
               
               </p>
               <br/>
-              <p className="text-xl">
+              <p className="lg:text-xl sm:text-md">
               4. Follow the prompts: Follow the installation prompts to install Olammba.
               For Linux
               
@@ -63,20 +63,20 @@ const App = () => {
            <div>
             <p className="font-bold text-5xl">For Linux</p><br/>
             <div>
-              <p className="text-xl">
+              <p className="lg:text-xl sm:text-md">
             1. Download: Go to the official Olammba website and click on the "Download" button for  <span className="ml-5">Linux.</span>
               
               </p>
               <br/>
-              <p class="text-xl">
+              <p class="lg:text-xl sm:text-md">
                   2. Save the package: Save the downloaded file (<code>olammba_&lt;version&gt;.deb</code> or  <span className="ml-5"> <code>olammba_&lt;version&gt;.rpm</code>) to your computer.</span>
               </p>    
               <br/>
-              <p class="text-xl">
+              <p class="lg:text-xl sm:text-md">
 3. Install the package: Open a terminal and navigate to the directory where you saved the <span className="ml-5"> package. Run the command <code>sudo dpkg -i olammba_&lt;version&gt;.deb</code> (for Debian-based</span>  <span className="ml-5">systems) or <code>sudo rpm -i olammba_&lt;version&gt;.rpm</code> (for RPM-based systems).</span>
 </p>
               <br/>
-              <p className="text-xl">
+              <p className="lg:text-xl sm:text-md">
               4. Verify installation: Run the command olammba --version to verify that Olammba has been  <span className="ml-5">installed successfully.</span>
               
               </p>
@@ -86,26 +86,26 @@ const App = () => {
            <div>
             <p className="font-bold text-5xl">For macOS</p><br/>
             <div>
-              <p className="text-xl">
+              <p className="lg:text-xl sm:text-md">
             1. Download: Go to the official Olammba website and click on the "Download" button for  <span className="ml-5">macOS.</span>
               
               </p>
               <br/>
-              <p class="text-xl">
+              <p class="lg:text-xl sm:text-md">
 2. Save the installer: Save the downloaded file (<code>Olammba_&lt;version&gt;.dmg</code>) to your computer.
 </p>
               <br/>
-              <p className="text-xl">
+              <p className="lg:text-xl sm:text-md">
               3. Open the installer: Double-click on the downloaded file to open the installer.
               
               </p>
               <br/>
-              <p className="text-xl">
+              <p className="lg:text-xl sm:text-md">
               4. Drag and drop: Drag the Olammba icon to the Applications folder to install it.
               
               </p>
               <br/>
-              <p className="text-xl">
+              <p className="lg:text-xl sm:text-md">
               5. Verify installation: Open a terminal and run the command olammba --version to verify that  <span className="ml-5">Olammba has been installed successfully.</span>
               </p>
               <br/>
@@ -161,7 +161,7 @@ const App = () => {
                 </p>
               </div>
               <br/>
-              <p className="text-xl">To run Olammba, open Command Prompt (Cmd) or Terminal and run one of the following commands:</p>
+              <p className="lg:text-xl sm:text-md">To run Olammba, open Command Prompt (Cmd) or Terminal and run one of the following commands:</p>
             </div>
             <br></br>
             <div>
@@ -296,9 +296,9 @@ const App = () => {
   return (
    <div>
     <BackgroundBeamsWithCollision>
-      <h2 className="text-2xl relative z-20 md:text-4xl lg:text-7xl font-bold text-center text-black dark:text-white font-sans tracking-tight">
+      <h2 className="text-xl relative z-20 md:text-4xl lg:text-7xl font-bold text-center text-black dark:text-white font-sans tracking-tight">
         Think Performance & Security!{" "}
-       <div className="text-8xl">
+       <div className="lg:text-8xl sm:text-4xl">
        <div className="relative mx-auto inline-block w-max [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]">
           <div className="absolute left-0 top-[1px] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-r py-4 from-purple-500 via-violet-500 to-pink-500 [text-shadow:0_0_rgba(0,0,0,0.1)]">
             <span className="">Think JAN AI</span>

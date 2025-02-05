@@ -232,7 +232,7 @@ const App = () => {
       title: "STEP : 3",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+          <p className="text-neutral-800 dark:text-neutral-200 lg:text-2xl sm:text-xl font-normal mb-4">
             Steps to run extension
           </p>
           <div className="mb-8">
@@ -243,7 +243,7 @@ const App = () => {
               ✅ Install JAN AI Extension
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Open Extension by the Command of ctrl+shift+P search for the extension  and open
+              ✅ Open Extension by the Command of <span className="pl-2 pr-2 pt-1 pb-1 rounded-2xl bg-gray-600 ">ctrl+shift+P</span> search for the extension  and open
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
               ✅ Choose model R1:1.5B or R1:7B 

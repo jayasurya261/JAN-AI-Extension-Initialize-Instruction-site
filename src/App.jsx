@@ -4,6 +4,9 @@ import { useState } from "react";
 import { MdContentCopy } from "react-icons/md";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { BackgroundBeamsWithCollision } from "./components/ui/background-beams-with-collision";
+import { GlowingEffect } from "./components/ui/glowing-effect";
+import { GlowingEffectDemoSecond } from "./components/ui/GlowingEffectDemoSecond";
+import { FloatingDockDemo } from "./components/ui/FloatingDockDemo";
 
 const App = () => {
   const [copied, setCopied] = useState(false);
@@ -298,7 +301,10 @@ const App = () => {
   ];
   return (
    <div>
+    
+   
     <BackgroundBeamsWithCollision>
+      
       <h2 className="text-xl relative z-20 md:text-4xl lg:text-7xl font-bold text-center text-black dark:text-white font-sans tracking-tight">
         Think Performance & Security!{" "}
        <div className="lg:text-8xl sm:text-4xl">
@@ -313,7 +319,13 @@ const App = () => {
        </div>
       </h2>
     </BackgroundBeamsWithCollision>
+     
+     <div className="flex flex-col items-center justify-center pl-6 pr-6 bg-[#0a0a0a]">
+       <GlowingEffectDemoSecond />
+     </div>
+      
     <Timeline data={data} />
+    <FloatingDockDemo /> 
    </div>
   );
 };

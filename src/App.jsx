@@ -9,6 +9,7 @@ import { GlowingEffectDemoSecond } from "./components/ui/GlowingEffectDemoSecond
 import { FloatingDockDemo } from "./components/ui/FloatingDockDemo";
 import { HeroHighlight } from "./components/ui/hero-highlight";
 import { HeroHighlightDemo } from "./components/ui/HeroHighlightDemo";
+import {  OsCards } from "./components/ui/os-cards";
 
 const App = () => {
   const [copied, setCopied] = useState(false);
@@ -322,10 +323,15 @@ const App = () => {
       </h2>
     </BackgroundBeamsWithCollision>
      
-     <div className="flex flex-col items-center justify-center pl-6 pr-6 bg-[#0a0a0a]">
+     <div className="flex flex-col items-center justify-center pl-6 pr-6 bg-[#0a0a0a] pb-4">
        <GlowingEffectDemoSecond />
      </div>
       <HeroHighlightDemo/>
+      <div className="flex items-center justify-center pl-6 pr-6 bg-[#0a0a0a] ">
+        <OsCards name="window" />
+        <OsCards name="macos"/>
+        <OsCards name = "linux"/>
+      </div>
     <Timeline data={data} />
     <FloatingDockDemo /> 
    </div>

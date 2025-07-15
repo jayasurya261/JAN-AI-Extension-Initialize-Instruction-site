@@ -7,6 +7,8 @@ import { BackgroundBeamsWithCollision } from "./components/ui/background-beams-w
 import { GlowingEffect } from "./components/ui/glowing-effect";
 import { GlowingEffectDemoSecond } from "./components/ui/GlowingEffectDemoSecond";
 import { FloatingDockDemo } from "./components/ui/FloatingDockDemo";
+import { HeroHighlight } from "./components/ui/hero-highlight";
+import { HeroHighlightDemo } from "./components/ui/HeroHighlightDemo";
 
 const App = () => {
   const [copied, setCopied] = useState(false);
@@ -323,7 +325,7 @@ const App = () => {
      <div className="flex flex-col items-center justify-center pl-6 pr-6 bg-[#0a0a0a]">
        <GlowingEffectDemoSecond />
      </div>
-      
+      <HeroHighlightDemo/>
     <Timeline data={data} />
     <FloatingDockDemo /> 
    </div>

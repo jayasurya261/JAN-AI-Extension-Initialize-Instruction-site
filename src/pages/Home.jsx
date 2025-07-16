@@ -410,7 +410,7 @@ const Home = () => {
         </div>
       </div>
       </a>
-      <Timeline data={data} />
+     
       <FloatingDockDemo />
     </div>
   );

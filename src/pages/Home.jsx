@@ -378,7 +378,7 @@ const Home = () => {
         <OsCards name="linux" />
       </div>
       <a href="https://forms.gle/RxCJeaYEsB3CxcAw7" target="_blank" rel="noopener noreferrer">
-        <div className="flex items-center justify-center pl-6 pr-6 bg-[#0a0a0a]">
+        <div className="flex items-center justify-center pl-6 pr-6 pb-24 bg-[#0a0a0a]">
         <div class="flex items-center justify-center mt-20">
           <div class="relative group">
             <button class="relative inline-block p-px font-semibold leading-6 text-white bg-gray-800 shadow-2xl cursor-pointer rounded-xl shadow-zinc-900 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95">
@@ -410,8 +410,10 @@ const Home = () => {
         </div>
       </div>
       </a>
-      <Timeline data={data} />
-      <FloatingDockDemo />
+     
+     <div className="z-100 relative">
+       <FloatingDockDemo />
+     </div>
     </div>
   );
 };

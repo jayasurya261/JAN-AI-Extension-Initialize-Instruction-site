@@ -1,6 +1,8 @@
 import { div } from "motion/react-client";
+import { Link } from "react-router-dom";
 
 export function OsCards(props) {
+  console.log(props.name)
     return(
         <div  className="pl-8 pr-8">
            
@@ -28,11 +30,24 @@ export function OsCards(props) {
       {props.name == "linux" ? "JAN AI works on variety of Linux distribution eg. Debian family, Red Hat family, Open Suse family and Arch.":""}
     </p>
   </div>
+ {props.name == "window" ?<Link to="/os/windows">
   <button
     class="hover:bg-purple-400 bg-purple-600 text-white mt-6 rounded p-2 px-6"
-  >
+    >
     Download Now
-  </button>
+  </button></Link> : ""}
+ {props.name == "macos" ?<Link to="/os/macos">
+  <button
+    class="hover:bg-purple-400 bg-purple-600 text-white mt-6 rounded p-2 px-6"
+    >
+    Download Now
+  </button></Link> : ""}
+ {props.name == "linux" ?<Link to="/os/linux">
+  <button
+    class="hover:bg-purple-400 bg-purple-600 text-white mt-6 rounded p-2 px-6"
+    >
+    Download Now
+  </button></Link> : ""}
 </div>
 
         </div>

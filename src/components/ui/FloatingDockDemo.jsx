@@ -23,7 +23,7 @@ export function FloatingDockDemo() {
       icon: (
         <FaMicrosoft  className="h-full w-full text-neutral-500 dark:text-neutral-300"/>
       ),
-      href: "#",
+      to: "/os/windows",
     },
 
     {
@@ -31,14 +31,14 @@ export function FloatingDockDemo() {
       icon: (
        <FaLinux className="h-full w-full text-neutral-500 dark:text-neutral-300"/>
       ),
-      href: "#",
+      to: "/os/linux",
     },
     {
       title: "Mac OS",
       icon: (
         <FaApple  className="h-full w-full text-neutral-500 dark:text-neutral-300"/>
       ),
-      href: "#",
+      to: "/os/macos",
     },
    
   ];

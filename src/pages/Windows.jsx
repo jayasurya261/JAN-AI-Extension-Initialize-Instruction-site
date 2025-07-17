@@ -307,7 +307,9 @@ function Windows() {
 
   return (
     <div className="App">
-      <LampDemo name={os} />
+     <div className="bg-black ">
+       <LampDemo name={os} />
+     </div>
       <Timeline data={data} />
     </div>
   );

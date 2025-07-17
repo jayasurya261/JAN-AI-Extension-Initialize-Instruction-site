@@ -1,6 +1,7 @@
 import { div } from "motion/react-client";
 
 export function OsCards(props) {
+  console.log(props.name)
     return(
         <div  className="pl-8 pr-8">
            

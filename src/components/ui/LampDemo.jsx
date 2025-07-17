@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import { LampContainer } from "./lamp";
 
 export function LampDemo(props) {
+  console.log(props.name);
   return (
     <LampContainer >
       <motion.h1
@@ -15,7 +16,9 @@ export function LampDemo(props) {
           ease: "easeInOut",
         }}
         className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl">
-        {props.name == "window"? "Windows":""}
+        {props.name == "windows"? "Windows":""}
+        {props.name == "macos"? "MacOS":""}
+        {props.name == "linux"? "Linux":""}
       </motion.h1>
     </LampContainer>
   );

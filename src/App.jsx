@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound/>} /> 
-        <Route path="/os" element={<Windows/>} />
+        <Route path="/os/:os" element={<Windows/>} />
        
       </Routes>
     </div>
